@@ -5,7 +5,7 @@ Steps To Create Project
     Group
     Artifact Id
     Version
-    Package
+    Packagke
 4} Click Next for Adding Dependencies
    We Add a)spring-boot-starter-data-jpa
    		  b)spring-boot-starter-web
