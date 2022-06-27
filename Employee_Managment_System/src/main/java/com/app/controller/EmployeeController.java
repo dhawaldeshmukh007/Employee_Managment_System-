@@ -20,6 +20,9 @@ import com.app.entity.Employee;
 import com.app.repository.EmployeRepository;
 import com.app.service.EmployeeService;
 
+/*Front Controller or Dispatcher Servlet
+*/
+
 @RestController
 public class EmployeeController {
 	
@@ -28,6 +31,8 @@ public class EmployeeController {
 	
 	@Autowired
 	EmployeRepository employeRepository;	
+	
+	To Get All Employees
 	@GetMapping("/employees")
 	public ResponseEntity<List<Employee>> getAllEmployee() {
 
@@ -40,7 +45,7 @@ public class EmployeeController {
 	}
 	
 
-
+	/* To Get All Employees By Email */
 	@GetMapping("/employee/{email}")
 	public ResponseEntity<Employee> getAllBookById(@PathVariable("email") String email) {
 		Employee employee1 = employeeService.getEmployeeByEmail(email);
@@ -51,6 +56,9 @@ public class EmployeeController {
 		return ResponseEntity.of(Optional.of(employee1));
 
 	}
+	
+	/* To Get All Employees by Name */
+	
 	@GetMapping("/employee/{name}")
 	public ResponseEntity<Employee> getAllBookByName(@PathVariable("name") String name) {
 		Employee employee2 = employeeService.getEmployeeByName(name);
@@ -61,6 +69,7 @@ public class EmployeeController {
 		return ResponseEntity.of(Optional.of(employee2));
 	}
 	
+	/* To Add All Employees */
 	
 	@PostMapping("/employees")
 	public ResponseEntity<Employee> addEmployee(@Valid @RequestBody Employee employee) {
@@ -70,6 +79,7 @@ public class EmployeeController {
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 	}
 	
+	/* To Update All Employees */
 	
 	  @PutMapping("/employees") public Employee updateEmployee(@Valid  @RequestBody
 	  Employee employee) {
