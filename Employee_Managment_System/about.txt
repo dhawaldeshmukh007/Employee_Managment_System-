@@ -22,12 +22,18 @@ Steps To Create Project
 	public Employee findByName(String name);
 
 7} Create Service class in Service package "EmployeeService" and write Service implmentation.
+
 8} Create Controller class in Controller Package "EmployeeController" and write mathods 
    for Fetching,Update,Delete,Add Employee Details through URL via Postman.
-9} Write Methods for the Same
+   
+9} Write Methods for the Same.
+
 10} Run the Project through EmployeeManagmentSystemApplication.java file in com.app folder
-11} open Mysql Create Folder "Java_batch" and create table with the name "employee" and Fields
+
+11} open Mysql Create Folder "Java_batch" and create table with the name "employee" and Fields.
+
 12} Write application.properties file to esablish connection between Mysql Database and Application.
+
 13} open postman write URL "localhost/8080/employee" and change the request frm GET,POST,PUT,DELETE for 
 getting all data,add data,delete data and Update Data respectively.
    
