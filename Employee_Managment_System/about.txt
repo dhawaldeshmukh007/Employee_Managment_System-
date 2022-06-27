@@ -1,0 +1,33 @@
+Steps To Create Project
+1} Open Spring Tool Suit.
+2} Open File->New->Spring Starter Project->Select
+3} After we click select an Window is open provide 
+    Group
+    Artifact Id
+    Version
+    Package
+4} Click Next for Adding Dependencies
+   We Add a)spring-boot-starter-data-jpa
+   		  b)spring-boot-starter-web
+   		  c)spring-boot-devtools
+   		  d)mysql-connector-java
+   		  e)spring-boot-starter-test
+   		  f)spring-boot-starter-validation
+5} First Create Pojo File Name "Employee.java" with Id ,Name,Email fields with 
+   Setters,Getters,Constructors(both),to String method.
+  
+6} Create Repository Using JPARepository for CRUD operation and declared following methods
+	public Employee findById(int id);
+	public Employee findByEmail(String email);
+	public Employee findByName(String name);
+
+7} Create Service class in Service package "EmployeeService" and write Service implmentation.
+8} Create Controller class in Controller Package "EmployeeController" and write mathods 
+   for Fetching,Update,Delete,Add Employee Details through URL via Postman.
+9} Write Methods for the Same
+10} Run the Project through EmployeeManagmentSystemApplication.java file in com.app folder
+11} open Mysql Create Folder "Java_batch" and create table with the name "employee" and Fields
+12} Write application.properties file to esablish connection between Mysql Database and Application.
+13} open postman write URL "localhost/8080/employee" and change the request frm GET,POST,PUT,DELETE for 
+getting all data,add data,delete data and Update Data respectively.
+   
