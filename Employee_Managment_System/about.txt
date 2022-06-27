@@ -1,4 +1,4 @@
-**Steps To Create Project**
+**********Steps To Create Project**********
 1} Open Spring Tool Suit.
 2} Open File->New->Spring Starter Project->Select
 3} After we click select an Window is open provide 
