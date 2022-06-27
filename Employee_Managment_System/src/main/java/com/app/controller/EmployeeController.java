@@ -32,7 +32,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeRepository employeRepository;	
 	
-	To Get All Employees
+	/* To Get All Employees */
 	@GetMapping("/employees")
 	public ResponseEntity<List<Employee>> getAllEmployee() {
 
